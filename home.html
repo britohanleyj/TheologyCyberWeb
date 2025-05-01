@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
+    <div class="parallax-bg"></div>
 <header>
     <h1>Theological Healing For Cyber Professionals</h1>
     <p>Finding strength through faith, community, and resilience.</p>
@@ -73,9 +74,13 @@
     </div>
 </section>
 
-<footer>
-    <p>Trauma Healing in Cybersecurity | A Theology Project.</p>
-</footer>
+    <script>
+    window.addEventListener('scroll', function () {
+      const scrolled = window.scrollY;
+      const parallax = document.querySelector('.parallax-bg');
+      parallax.style.transform = 'translateY(' + (scrolled * -0.5) + 'px)';
+    });
+  </script>
 </body>
 </html>
 

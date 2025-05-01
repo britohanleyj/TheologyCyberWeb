@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="static/css/resources.css">
 </head>
 <body>
+    <div class="parallax-bg"></div>
 <header>
     <h1>Resources for Healing</h1>
     <p>Research, strategies, and inspiration for recovery.</p>
@@ -25,43 +26,43 @@
     <h2>Helpful Studies and Articles</h2>
     <div class="grid">
         <div class="resource-card">
-            <img src="static/images/alkhouri.jpg" alt="Alkhouri Article">
+            <img src="static/images/placeholder.jpeg" alt="Alkhouri Article">
             <h3>Alkhouri (2024)</h3>
             <p>This article explores how faith-based psychological beliefs support ethical decisions and stress mitigation in cybersecurity, connecting timeless spiritual practices with the digital age.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/ano.jpg" alt="Ano Article">
+            <img src="static/images/placeholder.jpeg" alt="Ano Article">
             <h3>Ano & Vasconcelles (2005)</h3>
             <p>A meta-analysis of religious coping strategies, both positive and negative, and how they shape psychological resilience in high-stress environments like cybersecurity response.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/elia.jpg" alt="Elia Article">
+            <img src="static/images/placeholder.jpeg" alt="Elia Article">
             <h3>Elia (2019)</h3>
             <p>Discusses ethical challenges and cyber threats in theological institutions, offering a unique lens on the intersection of theology and digital defense strategies.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/hollis.jpg" alt="Hollis Article">
+            <img src="static/images/placeholder.jpeg" alt="Hollis Article">
             <h3>Hollis (2023)</h3>
             <p>Based on interviews with 22 cyber professionals, this dissertation highlights the emotional and psychological toll of high-stakes cyber incidents, and the need for structured support systems.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/mott.jpg" alt="Mott and Turner Article">
+            <img src="static/images/placeholder.jpeg" alt="Mott and Turner Article">
             <h3>Mott & Turner (2024)</h3>
             <p>First-hand accounts of cybersecurity responders describe PTSD-like symptoms and emotional strain following ransomware attacks, drawing attention to organizational healing strategies.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/oakley.jpg" alt="Oakley Article">
+            <img src="static/images/placeholder.jpeg" alt="Oakley Article">
             <h3>Oakley (2013)</h3>
             <p>Summarizes Serene Jones' work on trauma and grace, offering theological tools for healing and drawing parallels to the emotional recovery process for cyber responders.</p>
         </div>
 
         <div class="resource-card">
-            <img src="static/images/renaud.jpg" alt="Renaud and Dupuis Article">
+            <img src="static/images/placeholder.jpeg" alt="Renaud and Dupuis Article">
             <h3>Renaud & Dupuis (2023)</h3>
             <p>Explores religious values—believing, belonging, and doing—and their relevance to ethical conduct and mental well-being for cybersecurity professionals under pressure.</p>
         </div>
@@ -70,8 +71,12 @@
 
 
 
-<footer>
-    <p>Trauma Healing in Cybersecurity | A Theology Project.</p>
-</footer>
+    <script>
+    window.addEventListener('scroll', function () {
+      const scrolled = window.scrollY;
+      const parallax = document.querySelector('.parallax-bg');
+      parallax.style.transform = 'translateY(' + (scrolled * -0.5) + 'px)';
+    });
+  </script>
 </body>
 </html>

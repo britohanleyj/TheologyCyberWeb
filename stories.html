@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Stories - Healing in Cybersecurity</title>
     <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/stories.css">
 </head>
 <body>
+    <div class="parallax-bg"></div>
 <header>
     <h1>Voices of Strength</h1>
     <p>Real words from real people, finding resilience through faith and community.</p>
@@ -21,20 +23,59 @@
 </nav>
 
 <div class="container">
+    <section class="featured-story">
+        <h2>Featured Story: <em>Security and Salvation</em></h2>
+        <p><strong>By Samuel A. Adewole</strong><br>
+        <img src="static/images/placeholder.jpeg" alt="Samuel A. Adewole">
+        Information Security Specialist | Cyber Resilience | DevSecOps</p>
+    
+        <div class="featured-content">
+            <p>“As a cybersecurity practitioner and a Christian, I have often found myself contemplating the seemingly disparate worlds of technology and faith. However, I have discovered surprising parallels between the principles that guide my work and the foundational truths of my faith.”</p>
+    
+            <p>From stewardship and vigilance to education and support, Samuel explores how cybersecurity and Christianity both aim to protect, empower, and enable human flourishing. Just as Jesus laid out principles to live a full life, cybersecurity guidelines protect digital lives — not to restrict, but to uplift.</p>
+    
+            <p>“By approaching cybersecurity with a heart of service and a commitment to excellence, I believe we can make a meaningful difference in the lives of those we serve.”</p>
+    
+            <p><a href="https://www.linkedin.com/pulse/security-salvation-exploring-unexpected-parallels-between-adewole-jrpzf/" class="btn">Read Full Reflection (Link)</a></p>
+        </div>
+    </section>
     <section>
         <h2>Believing</h2>
-        <blockquote>\"Stories allow you to open your mind, and compare your trials to those others have experienced.\"</blockquote>
+        <blockquote>
+            “In the parable of the wise and foolish builders, Jesus emphasizes the importance of building one's life on a solid foundation. Similarly, in cybersecurity, we must build strong foundations of protection. This alignment of faith and practice shows me that cybersecurity isn’t just technical — it can also be spiritual.”
+            <footer>– Samuel A. Adewole</footer>
+        </blockquote>
+        <blockquote>
+            “Every time I opened the ticket system, I felt a wave of anxiety. It wasn’t just technical fatigue — I was spiritually exhausted. Faith reminded me to breathe, reflect, and return with purpose.”
+            <footer>- Mott & Turner (2024)</footer>
+        </blockquote>
 
         <h2>Belonging</h2>
-        <blockquote>\"The sense of belonging, of connecting to others, is an essential foundation for healing.\"</blockquote>
+        <blockquote>
+            “As a Christian, I have experienced firsthand the importance of the church community in providing support, encouragement, and accountability... Similarly, in cybersecurity, collaboration and shared wisdom help us protect and strengthen one another.”
+            <footer>– Samuel A. Adewole</footer>
+        </blockquote>
+        <blockquote>
+            “After the breach, I couldn't sleep for days. It wasn’t just the workload — it was the feeling that I had let people down. What helped me recover wasn’t just time off — it was my faith community reminding me that I’m more than my role, and that redemption is real.”
+            <footer>– Interviewee from Hollis, 2023</footer>
+        </blockquote>
+        <blockquote>“In Islam, protecting others through your work is an act of worship. A young engineer told me that their cybersecurity role gave them a sense of holy responsibility.”
+            <footer>– Interviewed religious leader, paraphrased from Renaud & Dupuis</footer>
+        </blockquote>
 
         <h2>Doing</h2>
-        <blockquote>\"Practice grace — be kind, be forgiving when people make mistakes.\"</blockquote>
+        <blockquote>
+            “The principles that guide my spiritual life — stewardship, vigilance, education, and community — have taken on new meaning when applied to my work. By approaching cybersecurity with a heart of service, I believe we can make a meaningful difference.”
+            <footer>– Samuel A. Adewole</footer>
+        </blockquote>
     </section>
 </div>
-
-<footer>
-    <p>&copy; Trauma Healing in Cybersecurity | A Theology Project.</p>
-</footer>
+<script>
+    window.addEventListener('scroll', function () {
+      const scrolled = window.scrollY;
+      const parallax = document.querySelector('.parallax-bg');
+      parallax.style.transform = 'translateY(' + (scrolled * -0.5) + 'px)';
+    });
+  </script>
 </body>
 </html>
