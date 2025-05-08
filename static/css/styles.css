@@ -29,14 +29,14 @@ body {
 
 body::before {
     content: "";
-    position: fixed;          /* changed from absolute to fixed */
+    position: fixed;   
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #d8fff8cb;    /* Semi-transparent overlay */
+    background: #d8fff8cb;  
     z-index: -1;
-    pointer-events: none;     /* Ensures it doesn't block clicks */
+    pointer-events: none;    
 }
 
 header {
@@ -51,12 +51,12 @@ header {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.297);
 }
 
-/* Optional overlay to fade the image */
+/* overlay to fade the image */
 header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: #0d5656df;  /* Black overlay at 40% opacity */
+    background: #0d5656df;
     z-index: -1;
 }
 
@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     flex: 1;
@@ -118,6 +118,8 @@ nav ul li a {
 
 .container p {
     font-size: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .container h2 {
@@ -149,6 +151,30 @@ nav ul li a {
     border-radius: 10px;
 }
 
+/* BBD Setions */
+.BBD {
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    width: 90%;
+    margin: 40px auto;        
+    background-color: #2FBCBC;
+    border-radius: 25px;
+    padding: 20px 20px;
+    color: whitesmoke;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.297); 
+    text-align: center;
+}
+
+.BBD .promo {
+    flex: 1 1 400px;  
+    height: 100%;              
+    min-height: 80%;          
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
 /* Promo sections */
 
 .promo-content {
@@ -157,6 +183,7 @@ nav ul li a {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    border-radius: 10px;
 }
 
 .left-align .promo-content {
@@ -173,9 +200,8 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centers everything: heading, paragraph, button */
-    text-align: center;  /* Ensures text is also centered */
-    gap: 15px;
+    align-items: center; 
+    text-align: center;  
     padding-block: 1%;
 }
 
@@ -189,6 +215,7 @@ nav ul li a {
 .promo-text .btn {
     align-self: center; /* Centers the button below text block */
     border-style: solid;
+    border-radius: 10px;
 }
 
 .promo-image {
@@ -228,13 +255,6 @@ section h2 {
     margin-bottom: 10px;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
 
 form label {
     display: block;

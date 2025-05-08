@@ -1,9 +1,9 @@
 .featured-story {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color:whitesmoke;
     border-left: 6px solid #468faf;
     padding: 30px 25px;
     margin: 40px auto;
-    max-width: 900px;
+    max-width: 75%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
@@ -43,3 +43,20 @@
 .featured-story .btn:hover {
     background-color: #356f90;
 }
+
+.quotes {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+footer {
+    background: rgb(26, 26, 26);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+
